@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Dropdown from 'react-dropdown';
 import parse from 'html-react-parser';
-import fetchShow from './api/fetchShow';
+
 import { formatSeasons } from './utils/formatSeasons';
 
 import Episodes from './components/Episodes';
 import './styles.css';
+
+import { fetchShow } from './api/fetchShow';
 
 export default function App() {
 	const [show, setShow] = useState(null);
